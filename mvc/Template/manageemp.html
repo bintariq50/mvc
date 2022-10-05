@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav> 
+            <ul>
+                <a href="index.html"><li>Manage Projects</li></a>
+                <a href="mangaetask.html"><li>Manage Tasks</li></a>
+                <a href="manageemp.html"><li>Employee Management</li></a>
+                <a href="dept.html"><li>Departments</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-3">
+            <div class="col-3 bg-4">
+                <div class="col-3-1">
+                    <i class="fa fa-clock-o fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="col-3-2">
+                    <p>0</p><br>
+                    <p>Waiting</p>
+                </div>
+            </div>
+            <div class="col-3 bg-1">
+                <div class="col-3-1">
+                    <i class="fa fa-spinner fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="col-3-2">
+                    <p>0</p><br>
+                    <p>Progress</p>
+                </div>
+            </div>
+            <div class="col-3 bg-2">
+                <div class="col-3-1">
+                    <i class="fa fa-flag-checkered fa-3x" aria-hidden="true"></i>
+                 </div>
+                <div class="col-3-2">
+                    <p>0</p><br>
+                    <p>Finished</p>
+                </div>
+            </div>
+            <div class="col-3 bg-3">
+                <div class="col-3-1">
+                    <i class="fa fa-dot-circle-o fa-3x" aria-hidden="true"></i>
+                 </div>
+                <div class="col-3-2">
+                    <p>0</p><br>
+                    <p>Total</p>
+                </div>
+            </div>
+        </div>
+        <div class="total-project">
+            <div class="top">
+                <div class="text">
+                    <p>Employess</p>
+                </div>
+                <div class="addproject">
+                    <a href="addemp.html"><button class="button-1">Add Employee</button></a>
+                </div>
+            </div>
+            <div class="show">
+                <div class="excel">
+                    <a href="#"><button class="button-1">Excel</button></a>
+                </div>
+                <div class="entries">
+                    <label for="entry" class="label-show">Show</label>
+                    <select name="entry" id="entry">
+                        <option value="10" selected>10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                    <label for="entry" class="label-show"> Entries</label>
+                </div>
+                <div class="search">
+                    <label for="search">Search: </label>
+                    <input type="search" name="search" id="search" placeholder="Search here.." class="input">
+                </div>
+            </div>
+            <div class="table-3">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>Akram</td>
+                            <td>HR Manager</td>
+                            <td>Active</td>
+                            <td class="td-1"><a href="#"><button class="bg-3 input-2">View</button></a><a href="#"><button class="bg-1 input-2">Disable</button></a><a href="#"><button class="bg-2 input-2">Delete</button></a></td>
+                        </tr>
+                    </tbody>
+                    
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="showing-1">
+                <p>Showing 0 to 0 of 0 entries</p>
+                <div class="navigation">
+                    <div class="previous">
+                        <a href="#"><p>Previous</p></a>
+                    </div>
+                    <div class="next">
+                       <a href="#"><p>Next</p></a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </main>
+</body>
+</html>

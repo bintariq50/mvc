@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav> 
+            <ul>
+                <a href="index.html"><li>Manage Projects</li></a>
+                <a href="mangaetask.html"><li>Manage Tasks</li></a>
+                <a href="manageemp.html"><li>Employee Management</li></a>
+                <a href="dept.html"><li>Departments</li></a>
+            
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            <div class="col-1">
+                    <div class="col-1-8 bg-blue pad">
+                    <label for="title" class="label-all">Title</label>              
+                    <input type="text" name="title" id="title" class="input" placeholder="Project Name">
+                </div>    
+            </div>
+            <div class="col-1">
+                <div class="col-1-1 bg-blue">
+                    <label for="status" class="label-all">Status</label>
+                    <select name="status" id="staus" class="input">
+                        <option value="waiting" selected>Waiting</option>
+                        <option value="pending">Pending</option>
+                        <option value="terminated">Terminated</option>
+                        <option value="finished">Finished</option>
+                        <option value="progress">Progress</option>
+                    </select>
+                </div>
+                <div class="col-1-2 bd">
+                    <label for="progress" class="label-all">Progress(in %)</label>
+                    <input type="range" name="progressbar" id="progressbar" class="input">
+                </div>
+                <div class="col-1-3 bg-blue">
+                    <label for="priority" class="label-all">Priority</label>
+                    <select name="status" id="staus" class="input">
+                        <option value="low" selected>Low</option>
+                        <option value="med">Medium</option>
+                        <option value="high">High</option>
+                        <option value="urgent">Urgent</option>
+                    </select>
+                </div>
+            </div>
+        
+        <div class="col-1">
+            <div class="col-1-1 bd">
+                <label for="customer" class="label-all">Customer</label>
+                <select name="customer" id="customer" class="input">
+                    <option value="1">1</option>
+                </select>
+            </div>
+            <div class="col-1-2 bg-blue">
+                <label for="customerview" class="label-all">Customer can View</label>
+                <select name="customerview" id="customerview" class="input">
+                    <option value="true" selected>True</option>
+                    <option value="false">False</option>
+                </select>
+            </div>
+            <div class="col-1-3 bd">
+                <label for="customercomment" class="label-all">Customer Can View</label>
+                <select name="customercomment" id="customercomment" class="input">
+                    <option value="true" default>True</option>
+                    <option value="false">False</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="col-1-1 bg-blue">
+                <label for="budget" class="label-all">Budget</label>
+                <input type="text" name="budget" id="budget" class="input">
+            </div>
+            <div class="col-1-2 bd">
+                <label for="startdate" class="label-all">Start Date</label>     
+                <input type="date" name="startdate" id="startdate" class="input" placeholder="02-09-22">
+            </div>
+            <div class="col-1-3 bg-blue">
+                <label for="enddate" class="label-all">End Date</label>
+                <input type="date" name="enddate" id="enddate" class="input" placeholder="02-09-22">
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="col-1-4 bg-blue">
+                <label for="assignto" class="label-all">Assign to:</label><br>
+                <input type="text" name="assignto" id="assignto" class="input">
+            </div>
+            <div class="col-1-5 bd">
+                <label for="phase" class="label-all">Phase</label>
+                <input type="text" name="phase" id="phase" placeholder="Phase A,B,C" class="input">
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="col-1-5 bd">
+                <label for="linktocalc" class="label-all">Link to Calender</label><br>
+                <select name="linktocalc" id="linktocalc" class="input">
+                    <option value="no" selected>No</option>
+                    <option value="markas">Mark as Deadline(End Date)</option>
+                    <option value="markend">Mark as Start to End Date</option>
+                </select>
+            </div>
+            <div class="col-1-4 bg-blue">
+                <label for="tags" class="label-all">Tags</label>
+                <input type="text" name="tags" id="tags" class="input">
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="col-1-6">
+                <p>Choose File</p>
+            </div>
+            <div class="col-1-2">
+                <form action="file.php" style="margin:15px 0;">
+                    <input type="file" name="uploadfile" id="uploadfile" placeholder="" class="">
+                    <label for="uploadfile">Browse</label>
+                    <input type="submit" value="Upload" class="input-1">
+                </form>
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="col-1-6">
+                <p>Note</p>
+            </div>
+            <div class="col-1-2">
+                <textarea name="Note" id="note" cols="20" rows="4" placeholder="Note goes here...."></textarea>
+            </div>
+        </div>
+        <div class="col-1">
+            <div class="col-1-6">
+                <p>Task Communication</p>
+            </div>
+            <div class="col-1-2">
+                <select name="taskcomm" id="taskcomm" class="input">
+                    <option value="no" selected>No</option>
+                    <option value="emailtoteam">Email to Customer</option>
+                    <option value="emailtocustomer">Email to Customer and Team</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-1">
+            
+            <div class="col-1-7">
+                <input type="submit" value="Add Project" class="button">
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

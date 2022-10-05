@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <header>
+        <nav> 
+            <ul>
+                <a href="index.html"><li>Manage Projects</li></a>
+                <a href="mangaetask.html"><li>Manage Tasks</li></a>
+                <a href="manageemp.html"><li>Employee Management</li></a>
+                <a href="dept.html"><li>Employee Management</li></a>
+            
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-2">
+            <h1>Employee Detais</h1>
+            <div class="col-2">
+                <div class="col-2-2">
+                    <p>Title</p>
+                </div>
+                    <div class="col-2-1">
+                        <input type="text" name="title" id="task-title" class="width-60 bd input">
+                    </div>
+            </div>        
+            <div class="col-2">
+                <div class="col-2-2">
+                    <p>Status</p>
+                </div>
+                <div class="col-2-1">
+                    <select name="status" id="status" class="bd input">
+                        <option value="due" default>Due</option>
+                        <option value="done">Done</option>
+                        <option value="progress">Progress</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-2-2">
+                    <p>Priority</p>
+                </div>
+                <div class="col-2-1">
+                    <select name="priority" id="priority" class="bd input">
+                        <option value="low" default>Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                        <option value="urgent">Urgent</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-2-2">
+                    <p>Start Date</p>
+                </div>
+                <div class="col-2-1">
+                    <input type="date" name="startdate" id="startdate" placeholder="12-10-2022" class="bd input">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-2-2">
+                    <p>End Date</p>
+                </div>
+                <div class="col-2-1">
+                    <input type="date" name="enddate" id="enddate" placeholder="12-10-2022" class="bd input">
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-2-2">
+                    <p>Assign to: </p>
+                </div>
+                <div class="col-2-1">
+                     <select name="assign" id="assign" class="bd input">
+                        <option value="bussniessowner">BussniessOwner</option>
+                     </select>    
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-2-2">
+                    <p>Choose File</p>
+                </div>
+                <div class="col-2-1">
+                    <form action="file.php" class="allgn">
+                        <input type="file" name="uploadfile" id="uploadfile" placeholder="" class="">
+                        <label for="uploadfile">Browse</label>
+                        <input type="submit" value="Upload" class="input-1">
+                    </form>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-2-2">
+                    <p>Description </p>
+                </div>
+                <div class="col-2-1">
+                     <textarea name="description" id="description" cols="30" rows="5" placeholder="Description Goes here....."></textarea>     
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-2-2">
+                </div>
+                <div class="col-2-1">
+                    <input type="submit" value="Add Task" class="button">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
